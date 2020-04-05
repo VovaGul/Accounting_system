@@ -88,13 +88,17 @@
     Bypass password validation and create user anyway? [y/N]: y
     Superuser created successfully.
     
-    (env) D:\env\Accounting_system>py manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.ru
-    Password:
-    Password (again):
-    The password is too similar to the username.
-    This password is too short. It must contain at least 8 characters.
-    This password is too common.
-    Bypass password validation and create user anyway? [y/N]: y
-    Superuser created successfully.
+    (env) D:\env\Accounting_system>python manage.py runserver
+    Watching for file changes with StatReloader
+    Performing system checks...
+    
+    System check identified no issues (0 silenced).
+    April 03, 2020 - 21:49:58
+    Django version 3.0.4, using settings 'demoproject.settings'
+    Starting development server at http://127.0.0.1:8000/
+    Quit the server with CTRL-BREAK.
+    [03/Apr/2020 21:50:12] "GET /accounts/login/ HTTP/1.1" 200 1576
+    [03/Apr/2020 21:50:15] "POST /accounts/login/ HTTP/1.1" 302 0
+    [03/Apr/2020 21:50:15] "GET /accounts/profile/ HTTP/1.1" 200 1976
+    [03/Apr/2020 21:50:17] "GET /accounts/logout/ HTTP/1.1" 200 677
+    [03/Apr/2020 21:50:18] "GET / HTTP/1.1" 200 1576
