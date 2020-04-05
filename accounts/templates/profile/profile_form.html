@@ -9,7 +9,7 @@
         <h4 class="card-title">Your Profile</h4>
       </center>
 
-      <h4>{{ user.get_full_name }}</h4>
+      <b>{{ user.last_name }} {{ user.first_name }} {{ user.profile.patronymic }}</b>
 
       <ul>
         <li>Username: {{ user.username }}</li>

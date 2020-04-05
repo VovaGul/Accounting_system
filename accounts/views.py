@@ -5,5 +5,5 @@ from accounts.models import Profile
 
 class ProfileView(CreateView):
     model = Profile
-    fields = ('birth_date',)
+    fields = ('patronymic', 'birth_date')
     template_name = 'accounts/templates/profile/profile_form.html'
