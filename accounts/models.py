@@ -12,6 +12,12 @@ class Profile(models.Model):
 
     birth_date = models.DateField(null=True, blank=True)
 
+    class Meta:
+        permissions = (
+            ("can_drive", "Может водить"),
+            ("allowed_to_enterprise", "Допускается на предприятие"),
+        )
+
     def __str__(self):
         return f'{self.user.last_name} {self.user.first_name} {self.patronymic}'
 
