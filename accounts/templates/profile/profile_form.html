@@ -5,8 +5,20 @@
 {% block main %}
 <div class="card">
   <div class="card-body">
-      <h4 class="card-title">Your Profile</h4>
-        <a  href="{% url 'logout' %}">Logout</a>
+      <center>
+        <h4 class="card-title">Your Profile</h4>
+      </center>
+
+      <h4>{{ user.get_full_name }}</h4>
+
+      <ul>
+        <li>Username: {{ user.username }}</li>
+        <li>Location: {{ user.profile.location }}</li>
+        <li>Birth Date: {{ user.profile.birth_date }}</li>
+      </ul>
+
+      <a  href="{% url 'logout' %}">Logout</a>
+
 <!--  <form method="post" novalidate>-->
 <!--    {% csrf_token %}-->
 <!--    {{ form|crispy }}-->
