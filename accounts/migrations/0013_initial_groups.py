@@ -11,7 +11,47 @@ add_change = add + change
 add_change_delete = add + change + delete
 
 permissions = {
-    'moderator': {
+    'Администраторы': {
+        'auth': {
+            'user': change,
+        },
+        'accounts': {
+            'profile': add_change_delete + ["can_drive"],
+        },
+    },
+    'Подрядные организации': {
+        'auth': {
+            'user': change,
+        },
+        'accounts': {
+            'profile': add_change_delete + ["can_drive"],
+        },
+    },
+    'Отдел обработки информации': {
+        'auth': {
+            'user': change,
+        },
+        'accounts': {
+            'profile': add_change_delete + ["can_drive"],
+        },
+    },
+    'Сотрудники КПП': {
+        'auth': {
+            'user': change,
+        },
+        'accounts': {
+            'profile': add_change_delete + ["can_drive"],
+        },
+    },
+    'Inspector': {
+        'auth': {
+            'user': change,
+        },
+        'accounts': {
+            'profile': add_change_delete + ["can_drive"],
+        },
+    },
+    'Инспектора': {
         'auth': {
             'user': change,
         },
