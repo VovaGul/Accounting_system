@@ -1,0 +1,5 @@
+.idea/
+accounts/__pycache__/
+accounts/migrations/__pycache__/
+db.sqlite3
+demoproject/__pycache__/
