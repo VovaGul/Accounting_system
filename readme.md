@@ -49,11 +49,6 @@
     Successfully installed Django-3.0.4 PyMySQL-0.9.3 asgiref-3.2.7 django-crispy-fo
     rms-1.9.0 pytz-2019.3 sqlparse-0.3.1
     
-    (env) D:\env\Accounting_system>python manage.py makemigrations
-    Migrations for 'accounts':
-      accounts\migrations\0001_initial.py
-        - Create model Profile
-    
     (env) D:\env\Accounting_system>python manage.py migrate
     Operations to perform:
       Apply all migrations: accounts, admin, auth, contenttypes, sessions
